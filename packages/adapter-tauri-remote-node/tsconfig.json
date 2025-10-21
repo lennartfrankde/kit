@@ -14,6 +14,6 @@
 			"@sveltejs/kit": ["../kit/types/index"]
 		}
 	},
-	"include": ["*.js", "src/**/*.js", "*.d.ts", "utils.js"],
-	"exclude": ["files/**/*.js"]
+	"include": ["index.js", "src/**/*.js", "ambient.d.ts", "index.d.ts", "utils.js"],
+	"exclude": ["files/**/*.js", "rollup.config.js"]
 }
