@@ -432,6 +432,52 @@ importers:
         specifier: 'catalog:'
         version: 6.3.6(@types/node@18.19.119)(jiti@2.4.2)(lightningcss@1.30.1)(yaml@2.8.0)
 
+  packages/adapter-tauri-remote-node:
+    dependencies:
+      '@rollup/plugin-commonjs':
+        specifier: ^28.0.1
+        version: 28.0.1(rollup@4.50.1)
+      '@rollup/plugin-json':
+        specifier: ^6.1.0
+        version: 6.1.0(rollup@4.50.1)
+      '@rollup/plugin-node-resolve':
+        specifier: ^16.0.0
+        version: 16.0.0(rollup@4.50.1)
+      rollup:
+        specifier: ^4.9.5
+        version: 4.50.1
+    devDependencies:
+      '@polka/url':
+        specifier: 'catalog:'
+        version: 1.0.0-next.28
+      '@sveltejs/kit':
+        specifier: workspace:^
+        version: link:../kit
+      '@types/node':
+        specifier: 'catalog:'
+        version: 18.19.119
+      polka:
+        specifier: 'catalog:'
+        version: 1.0.0-next.28
+      sirv:
+        specifier: ^3.0.2
+        version: 3.0.2
+      typescript:
+        specifier: ^5.3.3
+        version: 5.8.3
+
+  packages/adapter-tauri-static:
+    devDependencies:
+      '@sveltejs/kit':
+        specifier: workspace:^
+        version: link:../kit
+      '@types/node':
+        specifier: 'catalog:'
+        version: 18.19.119
+      typescript:
+        specifier: ^5.3.3
+        version: 5.8.3
+
   packages/adapter-vercel:
     dependencies:
       '@vercel/nft':
