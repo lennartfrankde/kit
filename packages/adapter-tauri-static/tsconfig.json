@@ -1,0 +1,14 @@
+{
+	"extends": "../../tsconfig.json",
+	"compilerOptions": {
+		"module": "ESNext",
+		"moduleResolution": "bundler",
+		"rootDir": ".",
+		"lib": ["ESNext", "DOM"],
+		"checkJs": true,
+		"allowJs": true,
+		"noEmit": true,
+		"skipLibCheck": true
+	},
+	"include": ["*.js", "**/*.d.ts"]
+}

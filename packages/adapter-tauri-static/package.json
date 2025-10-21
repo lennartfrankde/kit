@@ -1,0 +1,47 @@
+{
+	"name": "@sveltejs/adapter-tauri-static",
+	"version": "0.1.0",
+	"description": "Adapter for SvelteKit apps that exports a static app for Tauri with remote server support",
+	"keywords": [
+		"adapter",
+		"deploy",
+		"hosting",
+		"tauri",
+		"static",
+		"svelte",
+		"sveltekit"
+	],
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/sveltejs/kit.git",
+		"directory": "packages/adapter-tauri-static"
+	},
+	"license": "MIT",
+	"type": "module",
+	"exports": {
+		".": {
+			"types": "./index.d.ts",
+			"import": "./index.js"
+		},
+		"./package.json": "./package.json"
+	},
+	"types": "index.d.ts",
+	"files": [
+		"index.js",
+		"index.d.ts",
+		"files"
+	],
+	"scripts": {
+		"lint": "prettier --check .",
+		"check": "tsc",
+		"format": "pnpm lint --write"
+	},
+	"devDependencies": {
+		"@sveltejs/kit": "workspace:^",
+		"@types/node": "catalog:",
+		"typescript": "^5.3.3"
+	},
+	"peerDependencies": {
+		"@sveltejs/kit": "^2.0.0"
+	}
+}
