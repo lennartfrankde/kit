@@ -103,7 +103,7 @@ const cors = (req, res, next) => {
 		return;
 	}
 
-	next();
+	void next();
 };
 
 /**
